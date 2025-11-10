@@ -14,7 +14,10 @@ const MovieCard = ({movie: {title, vote_average, release_date, original_language
                     <img src='star.svg' alt='start' />
                     <p>{vote_average ? vote_average.toFixed(1) : 'N/A'  }</p>
                 </div>
-
+                <span>•</span> 
+                <p className='lang'>{original_language}</p>
+                <span>•</span>
+                <p className='year'>{release_date ? new Date(release_date).getFullYear() : 'N/A'}</p>
             </div>
         </div>
        </div>
